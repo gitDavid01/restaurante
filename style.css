@@ -17,11 +17,12 @@ html{
 /* HEADER*/
 .header{
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     border-bottom: solid 1px rgb(156, 156, 156);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
 }
 .header h2{
     color: var(--primary-color);
@@ -32,8 +33,9 @@ html{
 .header p{
     color: var(--secondary-color);
     font-size: 1.5rem;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
     font-weight: 800;
+    padding-bottom: -10rem;
 }
 
 /*NAV*/
@@ -70,7 +72,7 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    height: 60vh; 
+    height: 65vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,8 +109,8 @@ button{
 
 .padre-imagenes-section{
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-evenly;
+    width: 90%;
 }
 
 .padre-imagenes-section figure{
@@ -174,6 +176,7 @@ li:hover{
 
 .main-images figure{
     position: relative;
+    padding: 1rem;
 }
 
 .main-images button{
@@ -193,7 +196,7 @@ footer{
     justify-content: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
     .main-images{
     
         width: 100%;
@@ -202,38 +205,298 @@ footer{
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    .padre-imagenes-section{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-    }
+    .section1 .padre-imagenes-section .chef{
+        width: 18.5rem;
+    }   
+    .section1 .padre-imagenes-section .pizza{
+        width: 18.5rem;
+    }   
 }
 
 @media (max-width: 1100px) {
-    .main img{
-        width: 400px;
-        border-radius: 20px;
-        border: solid black 2px;
-        
-    }
-    .main .hamburguesa{
-        height: 268px;
-    }
+    .section1 .padre-imagenes-section .chef{
+        width: 17rem;
+    }   
+    .section1 .padre-imagenes-section .pizza{
+        width: 17rem;
+    }   
+    .section1 button{
+        font-size: 2rem;
+    } 
     .main-images figure{
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
-    .main-images{
-        align-items: center;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+    @media (max-height :850px){
+        
+        .header h2{
+            font-size: 3.5rem;
+        }
+        .lista {
+            font-size: .9rem ;
+        }
+        .section1 p{
+            font-size: 3rem;
+        }
+    
+        .section1 .padre-imagenes-section .chef{
+            width: 16rem;
+        }   
+        .section1 .padre-imagenes-section .pizza{
+            width: 16rem;
+        }   
+        .section1 button{
+               font-size: 1.7rem;
+        } 
+        .section1 {
+                
+            background-size: 100% 95%;
+        }
+        .section1{
+            height: 20vh;
+            background-size: 100% 50%;
+        }
+        .header h2{
+            font-size: 2.4rem;
+        }
+        .header p{
+            font-size: 1.2rem;
+        }
+        .section1 p{
+            font-size: 2.0rem;
+        }
+        .section1 .padre-imagenes-section .chef{
+            width: 9rem;
+        }   
+        .section1 .padre-imagenes-section .pizza{
+            width: 9rem;
+        }   
+        .section1 button{
+            font-size: 1.2rem;
+          } 
+        .section1 {
+            height: 50vh;
+            background-size: 100% 80%;
+        }
+        .item {
+            font-size: 1.0rem;
+        }
+        .logo img{
+            width: 4rem;
+        }
+        .header{
+            height: 5vh;
+        }
+        .navbar{
+            height: 5vh;
+        }
+    } 
+    
+}
+@media (max-width: 600px){
+    .header h2{
+        font-size: 3rem;
     }
-    .padre-imagenes-section{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
+    .item {
+        font-size: 1.4rem;
     }
+    .section1 .padre-imagenes-section .chef{
+        width: 15rem;
+    }   
+    .section1 .padre-imagenes-section .pizza{
+        width: 15rem;
+    }   
+    .section1 button{
+        font-size: 1.4rem;
+    } 
+    .section1 {
+        
+        background-size: 100% 90%;
+    }
+}
+
+@media (max-width: 560px){
+    .section1 p{
+        font-size: 2.6rem;
+    }
+    .section1 .padre-imagenes-section .chef{
+        width: 14rem;
+    }   
+    .section1 .padre-imagenes-section .pizza{
+        width: 14rem;
+    }   
+    .section1 button{
+        font-size: 1.2rem;
+    } 
+    .section1 {
+
+        background-size: 100% 85%;
+    }
+}   
+
+
+@media (max-width: 510px){
+    .header h2{
+        font-size: 2.4rem;
+    }
+    .header p{
+        font-size: 1.2rem;
+    }
+    .section1 p{
+        font-size: 2.0rem;
+    }
+    .section1 .padre-imagenes-section .chef{
+        width: 9rem;
+    }   
+    .section1 .padre-imagenes-section .pizza{
+        width: 9rem;
+    }   
+    .section1 button{
+        font-size: 1.2rem;
+      } 
+    .section1 {
+        height: 50vh;
+        background-size: 100% 80%;
+    }
+    .item {
+        font-size: 1.0rem;
+    }
+    .logo img{
+        width: 4rem;
+    }
+    
+}
+
+  
+@media (max-width: 700px) {
+    @media (max-height :1200px){
+        
+        .header h2{
+            font-size: 3.5rem;
+        }
+        .lista {
+            font-size: .9rem ;
+        }
+        .section1 p{
+            font-size: 3rem;
+        }
+    
+        .section1 .padre-imagenes-section .chef{
+            width: 16rem;
+        }   
+        .section1 .padre-imagenes-section .pizza{
+            width: 16rem;
+        }   
+        .section1 button{
+               font-size: 1.7rem;
+        } 
+        .section1 {
+                
+            background-size: 100% 95%;
+        }
+        .section1{
+            height: 20vh;
+            background-size: 100% 50%;
+        }
+        .header h2{
+            font-size: 2.4rem;
+        }
+        .header p{
+            font-size: 1.2rem;
+        }
+        .section1 p{
+            font-size: 2.0rem;
+        }
+        .section1 .padre-imagenes-section .chef{
+            width: 9rem;
+        }   
+        .section1 .padre-imagenes-section .pizza{
+            width: 9rem;
+        }   
+        .section1 button{
+            font-size: 1.2rem;
+          } 
+        .section1 {
+            height: 50vh;
+            background-size: 100% 80%;
+        }
+        .item {
+            font-size: 1.0rem;
+        }
+        .logo img{
+            width: 4rem;
+        }
+        .header{
+            height: 5vh;
+        }
+        .navbar{
+            height: 5vh;
+        }
+    } 
+    
+}
+
+
+@media (max-width: 400px) {
+    @media (max-height :900px){
+        
+        .header h2{
+            font-size: 3.5rem;
+        }
+        .lista {
+            font-size: .9rem ;
+        }
+        .section1 p{
+            font-size: 3rem;
+        }
+    
+        .section1 .padre-imagenes-section .chef{
+            width: 16rem;
+        }   
+        .section1 .padre-imagenes-section .pizza{
+            width: 16rem;
+        }   
+        .section1 button{
+               font-size: 1.7rem;
+        } 
+        .section1{
+            height: 20vh;
+            background-size: 100% 50%;
+        }
+        .header h2{
+            font-size: 2.4rem;
+        }
+        .header p{
+            font-size: 1.2rem;
+        }
+        .section1 p{
+            font-size: 2.0rem;
+        }
+        .section1 .padre-imagenes-section .chef{
+            width: 9rem;
+        }   
+        .section1 .padre-imagenes-section .pizza{
+            width: 9rem;
+        }   
+        .section1 button{
+            font-size: 1.2rem;
+          } 
+        
+        .item {
+            font-size: 1.0rem;
+        }
+        .logo img{
+            width: 4rem;
+        }
+        .header{
+            height: 5vh;
+        }
+        .navbar{
+            height: 5vh;
+        }
+    } 
+    
 }
