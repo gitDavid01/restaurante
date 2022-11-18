@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: red;
+    --secondary-color: rgb(16, 61, 14);
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* HEADER*/
+.header{
+    width: 100%;
+    height: 10vh;
+    border-bottom: solid 1px rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h2{
+    color: var(--primary-color);
+    font-size: 3.8rem;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header p{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+    font-weight: 800;
+}
+
+/*NAV*/
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(16, 61, 14);
+    height: 14vh;
+}
+
+.navbar .lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    
+    width: 100%;
+}
+
+.item{
+    padding: 0 10px;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+}
+
+/*Section1 */
+
+.section1{
+    background-image: url('hotdog.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 0 40px 40px;
+}
+
+a{
+  text-decoration-line: none;
+  color: white;
+}
+
+.section1 .chef{
+    width: 20rem;
+    border-radius: 2rem;
+    box-shadow:  12px 12px 24px #81375a,
+             -12px -12px 24px #81375a;
+}
+
+.section1 .pizza{
+    width: 21.6rem;
+    border-radius: 2rem;
+    box-shadow:  12px 12px 24px #81375a,
+    -12px -12px 24px #81375a;
+}
+button{
+    background-color: transparent;
+    border: none;
+    background-color: yellow;
+    border-radius: 3rem;
+    font-size: 2.5rem;
+    
+}
+
+.padre-imagenes-section{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.padre-imagenes-section figure{
+    position: relative;
+    
+}
+.padre-imagenes-section button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+button:hover{
+    background-color: var(--primary-color);
+}
+li:hover{
+    background-color: var(--primary-color);
+}
+
+.section1 p{
+    color: white;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+
+/*Main*/
+
+
+.main{
+    width: 100%;
+    border-top: solid grey 1px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main p{
+    font-size: 3rem;
+    color: red;
+}
+
+.main img{
+    width: 400px;
+    border-radius: 20px;
+    border: solid black 2px;
+    
+}
+.main .hamburguesa{
+    height: 268px;
+}
+
+
+.main-images{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-images figure{
+    position: relative;
+}
+
+.main-images button{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+ 
+/*Footer*/
+
+footer{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .main-images{
+    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .padre-imagenes-section{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main img{
+        width: 400px;
+        border-radius: 20px;
+        border: solid black 2px;
+        
+    }
+    .main .hamburguesa{
+        height: 268px;
+    }
+    .main-images figure{
+        padding: 1rem;
+    }
+
+    .main-images{
+        align-items: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .padre-imagenes-section{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
